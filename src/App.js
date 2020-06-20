@@ -6,7 +6,7 @@ import todos from "./data/todoData";
 
 function App() {
 
-  const todoList = todos.map(item => <ToDoItem key={item.id} todos={item}/>)
+  const todoList = todos.map(item => <ToDoItem key={item.id} item={item}/>)
 
   return (
     <div className="App">
