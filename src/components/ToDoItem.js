@@ -3,10 +3,9 @@ import React from 'react';
 const ToDoItem = props =>
 
     <div className="list-group-item">
-        <input type="checkbox" checked={props.item.completed}/>
+        <input type="checkbox" checked={props.item.completed} onChange={() => props.checkBox(props.item.id)}/>
         <span>{props.item.text}</span>
         <br></br>
-        <span style={{display: !props.item.completed && "none"}}>Complete!</span>
         <hr></hr>
     </div>
 
